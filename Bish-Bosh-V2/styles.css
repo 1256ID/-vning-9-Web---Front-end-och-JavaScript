@@ -1,0 +1,13 @@
+html {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+
+.container-fluid {
+    min-width: 500px;
+}
