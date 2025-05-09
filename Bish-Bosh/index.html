@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />      
+        <title>Bish-Bosh</title>
+        <script>
+            function BishBosh() 
+            {
+                for (let number = 1; number <= 100; number++) 
+                {
+                    let output = "";
+    
+                    if (number % 3 === 0) {
+                        output += "Bish";
+                    }
+    
+                    if (number % 4 === 0) {
+                        output += "Bosh";
+                    }
+    
+                    if (output === "") {
+                        output = number;
+                    }
+    
+                    console.log(output);
+    
+                }
+            }
+    
+            document.addEventListener("DOMContentLoaded", function () 
+            {
+                const btn = document.getElementById("myButton");
+                btn.addEventListener("click", BishBosh());
+            });
+
+        </script>
+</head>
+
+<body>
+    <header>Bish bosh</header>
+    <button id="myButton">Click me</button>
+    
+    <footer></footer>
+    
+</body>
+
+
+</html>
